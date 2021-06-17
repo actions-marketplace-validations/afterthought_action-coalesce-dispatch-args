@@ -21,17 +21,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsc && git add lib"
-    }
-  },
   "dependencies": {
     "@actions/core": "^1.4.0"
   },
   "devDependencies": {
     "@types/node": "^15.12.2",
-    "husky": "^6.0.0",
     "typescript": "^4.3.3"
   }
 }
