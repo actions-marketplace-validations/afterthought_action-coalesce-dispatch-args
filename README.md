@@ -27,7 +27,7 @@ on:
 
 - run: echo "${{ steps.args.outputs.tag_name }}"
 ```
-Bump
+Bump.
 
 
 
