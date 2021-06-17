@@ -1,0 +1,22 @@
+name: 'Coalesce Dispatch Args'
+description: 'Coalesce input and named args in a dispatch workflow'
+author: 'Charles Swanberg<cswanberg@mad-swan.com>'
+branding:
+  icon: 'arrow-down'
+  color: 'blue'
+inputs:
+  input_args:
+    description: 'JSON object with input arg values'
+    default: '{}'
+    required: false
+  slash_args:
+    description: 'JSON object with slash arg values'
+    default: '{}'
+    required: false
+  default_args:
+    description: 'JSON object with default arg values'
+    default: '{}'
+    required: false
+runs:
+  using: 'node12'
+  main: 'lib/index.js'
