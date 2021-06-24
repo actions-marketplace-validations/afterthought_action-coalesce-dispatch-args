@@ -12,5 +12,5 @@ const result = {
 };
 
 for (const [key, value] of Object.entries(result)) {
-  core.setOutput(key, value);
+  core.setOutput(key, JSON.stringify(value));
 }
