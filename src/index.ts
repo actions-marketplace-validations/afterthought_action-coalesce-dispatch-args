@@ -11,6 +11,10 @@ const result = {
   ...slashArgs,
 };
 
+core.setOutput('result', JSON.stringify(result));
+
 for (const [key, value] of Object.entries(result)) {
-  core.setOutput(key, JSON.stringify(value));
+  core.setOutput(key, value);
 }
+
+
